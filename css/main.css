@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  background-color: #fa8900;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+
+.firstScreen {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.firstScreen .firstScreen__poster {
+  width: 100%;
+}
+.firstScreen .firstScreen__contentCurse {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.firstScreen .firstScreen__contentCurse ul {
+  margin: 0;
+  text-align: justify;
+  list-style: none;
+}
+.firstScreen .firstScreen__contentCurse ul li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.firstScreen .firstScreen__contentCurse ul li i {
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.firstScreen .firstScreen__contentCurse ul li p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.firstScreen .firstScreen__bonus {
+  color: #e12d00;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.firstScreen .firstScreen__bonus:nth-of-type(1) {
+  color: #9e6b00;
+  font-style: italic;
+  text-decoration: underline;
+}
+.firstScreen .firstScreen__CTA {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.firstScreen .firstScreen__CTA:hover i {
+  opacity: 1;
+  font-size: 2rem;
+}
+.firstScreen .firstScreen__CTA i {
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.firstScreen .firstScreen__CTA button {
+  background-color: #fa8900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+.firstScreen .firstScreen__CTA button:hover {
+  scale: 1.1;
+}
+.firstScreen .firstScreen__CTA button:active {
+  scale: 1.01;
+}/*# sourceMappingURL=main.css.map */

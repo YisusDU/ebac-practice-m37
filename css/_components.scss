@@ -1,0 +1,70 @@
+//Components
+
+//First screen
+.firstScreen {
+    width: 90%;
+    @include flex;
+
+    .firstScreen__poster {
+        width: 100%;
+    }
+
+    .firstScreen__contentCurse {
+        @include flex();
+        @include box;
+
+        ul {
+            margin: 0;
+            text-align: justify;
+            list-style: none;
+
+            li {
+                @include flex(space-evenly, row, center);
+                gap: 10px;
+
+                i{
+                    font-style: normal;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+    .firstScreen__bonus {
+        @include spanStyles($tertiaryColor);
+        font-weight: 600;
+    }
+
+    .firstScreen__bonus:nth-of-type(1) {
+        @include spanStyles($secondaryColor);
+    }
+
+    .firstScreen__CTA {
+        @include flex(space-evenly, row, center);
+        &:hover {
+            i {
+                opacity: 1;
+                font-size: 2rem;
+            }
+        }
+
+        i {
+            margin-left: 20px;
+            margin-right: 20px;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        button {
+            @include buttonCTA;
+            padding: 5px;
+        }
+    }
+
+}

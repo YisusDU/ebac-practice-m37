@@ -1,0 +1,19 @@
+//Layout
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    @include flex;
+    @include box;
+    background-color: $primaryColor;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+main {
+    @include flex;
+    @include box;
+}

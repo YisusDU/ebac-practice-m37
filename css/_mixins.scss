@@ -1,0 +1,36 @@
+//mixins
+@mixin buttonCTA {
+    background-color: $primaryColor;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        scale: 1.1;
+    }
+    &:active{
+        scale: 1.01;
+    }
+}
+
+@mixin spanStyles($color: #fff) {
+    color: $color;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@mixin flex($justify: space-evenly, $direction: column, $aligne: center) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $aligne;
+}
+
+@mixin box($width: 100%, $margin: 0px, $padding: 10px) {
+    box-sizing: border-box;
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+}
