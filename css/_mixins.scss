@@ -7,15 +7,21 @@
     font-size: 1.2rem;
     transition: all .3s ease-in-out;
 
-    &:hover {
-        scale: 1.1;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            scale: 1.1;
+            font-weight: bolder;
+        }
+
     }
-    &:active{
+
+
+    &:active {
         scale: 1.01;
     }
 }
 
-@mixin spanStyles($color: #fff) {
+@mixin spanStyles($color: $secondaryColor) {
     color: $color;
     font-style: italic;
     text-decoration: underline;

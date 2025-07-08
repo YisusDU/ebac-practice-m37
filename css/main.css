@@ -13,7 +13,7 @@ header {
   width: 100%;
   margin: 0px;
   padding: 10px;
-  background-color: #fa8900;
+  background-color: #dc7900;
   text-transform: uppercase;
   color: #fff;
 }
@@ -29,6 +29,10 @@ main {
   padding: 10px;
 }
 
+header h1 {
+  text-align: center;
+}
+
 .firstScreen {
   width: 90%;
   display: flex;
@@ -38,6 +42,7 @@ main {
 }
 .firstScreen .firstScreen__poster {
   width: 100%;
+  max-width: 800px;
 }
 .firstScreen .firstScreen__contentCurse {
   display: flex;
@@ -56,7 +61,7 @@ main {
 }
 .firstScreen .firstScreen__contentCurse ul li {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   gap: 10px;
@@ -76,7 +81,7 @@ main {
   font-weight: 600;
 }
 .firstScreen .firstScreen__bonus:nth-of-type(1) {
-  color: #9e6b00;
+  color: #c08200;
   font-style: italic;
   text-decoration: underline;
 }
@@ -97,17 +102,265 @@ main {
   transition: all 0.3s ease-in-out;
 }
 .firstScreen .firstScreen__CTA button {
-  background-color: #fa8900;
+  background-color: #dc7900;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
-  padding: 5px;
+  padding: 15px;
 }
-.firstScreen .firstScreen__CTA button:hover {
-  scale: 1.1;
+@media (hover: hover) and (pointer: fine) {
+  .firstScreen .firstScreen__CTA button:hover {
+    scale: 1.1;
+    font-weight: bolder;
+  }
 }
 .firstScreen .firstScreen__CTA button:active {
   scale: 1.01;
+}
+
+.guarantee {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.guarantee video {
+  width: 20%;
+  border-radius: 10px;
+  min-width: 250px;
+}
+.guarantee div {
+  box-sizing: border-box;
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+}
+.guarantee div .guarantee__span {
+  color: #c08200;
+  font-style: italic;
+  text-decoration: underline;
+}
+.guarantee div p {
+  text-align: justify;
+}
+
+.collab {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.collab h2 {
+  color: #dc7900;
+}
+.collab .collab__content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.collab .collab__content .collab__description {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+.collab .collab__content .collab__poster {
+  width: 60%;
+}
+.collab .collab__partners {
+  width: 100%;
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.additionalInfo .additionalInfo__info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.additionalInfo .additionalInfo__info div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.additionalInfo .additionalInfo__info div h2 {
+  color: #c08200;
+}
+.additionalInfo .additionalInfo__info div p {
+  text-align: justify;
+}
+.additionalInfo .additionalInfo__info div img {
+  width: 70%;
+}
+.additionalInfo .additionalInfo__info:nth-of-type(2) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.qualification h2 {
+  text-align: center;
+  color: #dc7900;
+  font-style: italic;
+  text-decoration: underline;
+}
+.qualification img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.product h2 {
+  color: #dc7900;
+}
+.product img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.lastCall {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  background-color: #fffee1;
+  text-align: center;
+  border-radius: 10px;
+}
+.lastCall h2 {
+  color: #c08200;
+}
+.lastCall video {
+  width: 100%;
+  max-width: 800px;
+}
+.lastCall h3 {
+  color: #dc7900;
+  font-size: 30px;
+}
+.lastCall img {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.lastCall p {
+  color: #0f0f0f;
+}
+.lastCall .lastCall__CTA {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.lastCall .lastCall__CTA:hover i {
+  opacity: 1;
+  font-size: 2rem;
+}
+.lastCall .lastCall__CTA i {
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.lastCall .lastCall__CTA button {
+  background-color: #dc7900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .lastCall .lastCall__CTA button:hover {
+    scale: 1.1;
+    font-weight: bolder;
+  }
+}
+.lastCall .lastCall__CTA button:active {
+  scale: 1.01;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  text-align: justify;
+  color: #494949;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .guarantee {
+    flex-direction: column;
+  }
+  .collab .collab__content {
+    flex-direction: column-reverse;
+  }
+  .additionalInfo .additionalInfo__info {
+    flex-direction: column-reverse;
+  }
+  .additionalInfo .additionalInfo__info:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f0f0f;
+    color: #fff;
+  }
+  footer {
+    color: #fff;
+  }
 }/*# sourceMappingURL=main.css.map */
